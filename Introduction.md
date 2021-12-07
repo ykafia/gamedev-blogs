@@ -1,10 +1,11 @@
 # The art of game development
 
-Hi everyone, I discovered Stride and hope to help people with Stride and GameDev through this blog post. It's a compilation of thoughts to make people start their journey with Stride without issues, can also serve as a tutorial.
+Hi everyone! Welcome to the first post of a series that will help you get started with game development in Stride!
+This post is target toward those who have very little experience and knowledge in game development and are trying to decide which game engine to use or a little written tutorial on how to get started with Stride.
 
-We will go through art and video game development and explain how keeping in mind that video game development is an art form will help you understand how a game engine works.
+I myself have been in this situation where my knowledge of graphics and programming in general was very limited and I wish to give some simple explanations to anyone who need a quick overview on how to make games, all while using the Stride game engine.
 
-In order to make a video game we first need to know how to make two things
+In this first post we're going to define video games and try to understand so let's first dive in by understanding what "video" and "game" means.
 
 ## Video
 
@@ -16,14 +17,14 @@ The creation of a movie can be seen as a process :
 
 ![image](movie.png)
 
-<!-- 1. Concept :
+1. Concept :
     This is when the directors with some artists will lay down the story and the visual appearence of the movie. A lot of the physical assets of the movies will be created around that time by artists. These assets can be either buildings, structures, sculptures, paintings etc.
 
 2. Shooting :
-    After creating the concepts, the scenes are shot, sometimes in order, sometimes not. 3D effects can also be prepared at that moment depending the complexity of the project. This part of the process is aimed at creating a maximum of usable content for the next step...
+    That's where the filming crew will create all the necessary video content - with actors, props, some visual effects - that the director will then use to create his movie.
 
 3. Compositing :
-    Once all the videos are shot, everything is brought together, selected and modified to be the closest to what the director originally envisionned. Special effects can be added, 3D effects and real life images can be merged together, colors can be changed etc. -->
+    Once all the shooting is done, it needs to be sorted out, selected and put together to make for a final product : the movie
 
 ## Game
 
@@ -56,8 +57,8 @@ Creating a game revolves around making sure those rules create a coherent game p
 
 ## Video games
 
-In video game development a lot of the creative processes that what we've talked about so far are used the same way but has a different steps.
-We can see a game as a movie generator where each action of the player can change the video playing in real time. Since games are programs that reacts to player inputs it needs to be concealed in a ...
+Making video games is very similar to making a movie.
+We can see a game as a movie generator where each action of the player can change the video playing in real time. Since games are programs that reacts to player inputs AND render images based on the state of the game, it needs to be concealed in a ...
 
 ### Game loop
 
@@ -65,18 +66,47 @@ Let's change our movie step process to better fit what a game does in real time.
 
 ![video game](Game.png)
 
-<!-- 1. Design, assets creation and game logic programming (this is where the game development happens)
-2. Game Loop (this is where the game runs)
-   1. Read player input
-   2. Game logic
-      1. Run scripts
-      2. Run physics simulation
-   3. Rendering
-      1. Draw visible elements on the screen.
-      2. Apply effects
-      3. Post processing
-   4. Repeat -->
+With the integration of games in a movie, we can somewhat say that video games are interactive movies!
 
-### The tools
+### Textures, textures, textures...
 
-### What stride offers
+Rendering is the pain point of video game development since the computer has to do what a movie does but in real time. The idea of having multiple different footage still holds in a game engine but it's restrained to having multiple different renders stored in different textures. 
+
+Keeping track of all of this, rendering complex 3D scenes, processing it all under one tenth of a second is something very complicated to do.
+
+Fortunately for us there are ...
+
+## Framerworks and Engines
+
+To help you develop games without diving into complex design problems, game frameworks and engines were created to do the tedious low level programming for you.
+
+Now how to choose between a framework and an engine ?
+
+Easy, if you need to do some easy prototyping, if you want to make games easily, a framework won't be what you're looking for.
+
+There are well known options using C# out there that you can find :
+
+* Frameworks :
+  * Monogame
+
+* Engines :
+  * Unity 3D (Only scripting)
+  * Unreal Engine (using Unreal CLR)
+  * Godot (using Mono)
+  * Stride
+
+Engines will provide you with the best development environment for developing games at the cost of being bound to the design established. More often than not, this price is negligible compared to the amount of work necessary to build a custom engine.
+
+## Why Stride ?
+
+Well Stride is a free open-source modular game engine made in entirely in C#, it has its own entity-component system, graphics library, rendering system etc.
+
+The key word is "modular". As i've told before, game engines tend to not be modular, you have to follow the design principles established, but with Stride, it's possible to make it your way.
+
+For example, if you'd like to use a different entity-component system, you can patch your own in your Stride games. You could even use existing C# libraries that were probably made for other game engines in Stride. In fact, Stride games are C# projects, anything you know and use in C# can be used in any Stride games.
+
+## But wait... there's more!
+
+Stride's most powerful feature is its shader system, something that we haven't talked about much but we will be going to in the future!
+
+Next we will be going to make our first game in Stride so stay tuned!
