@@ -1,11 +1,11 @@
 # The art of game development
 
 Hi everyone! Welcome to the first post of a series that will help you get started with game development in Stride!
-This post is target toward those who have very little experience and knowledge in game development and are trying to decide which game engine to use or a little written tutorial on how to get started with Stride.
+This series will be for those who have  little experience and knowledge in game development and are trying to decide if Stride is a good for them.
 
 I myself have been in this situation where my knowledge of graphics and programming in general was very limited and I wish to give some simple explanations to anyone who need a quick overview on how to make games, all while using the Stride game engine.
 
-In this first post we're going to define video games and try to understand so let's first dive in by understanding what "video" and "game" means.
+In this first post we're going to define video games and try to understand how a game works on a high level. So let's first dive in by looking at how videos and games are made.
 
 ## Video
 
@@ -58,7 +58,7 @@ Creating a game revolves around making sure those rules create a coherent game p
 ## Video games
 
 Making video games is very similar to making a movie.
-We can see a game as a movie generator where each action of the player can change the video playing in real time. Since games are programs that reacts to player inputs AND render images based on the state of the game, it needs to be concealed in a ...
+We can see a game as a movie generator where each action of the player can change the video playing in real time. Since games are programs that reacts to player inputs AND render images based on the state of the game, it needs to be concealed in a loop.
 
 ### Game loop
 
@@ -73,7 +73,6 @@ With the integration of games in a movie, we can somewhat say that video games a
 Rendering is the pain point of video game development since the computer has to do what a movie does but in real time. The idea of having multiple different footage still holds in a game engine but it's restrained to having multiple different renders stored in different textures. 
 
 Keeping track of all of this, rendering complex 3D scenes, processing it all under one tenth of a second is something very complicated to do.
-
 Fortunately for us there are ...
 
 ## Framerworks and Engines
@@ -97,13 +96,13 @@ There are well known options using C# out there that you can find :
 
 Engines will provide you with the best development environment for developing games at the cost of being bound to the design established. More often than not, this price is negligible compared to the amount of work necessary to build a custom engine.
 
-## Why Stride ?
+## Stride
 
-Well Stride is a free open-source modular game engine made in entirely in C#, it has its own entity-component system, graphics library, rendering system etc.
+Well Stride is a game engine made entirely in C#. Its API very similar to Unity3D on the high level and Monogame on the low level, meaning a lot of the knowledge you can acquire from Monogame/Unity tutorials can work in Stride.
 
-The key word is "modular". As i've told before, game engines tend to not be modular, you have to follow the design principles established, but with Stride, it's possible to make it your way.
+Unlike Unreal, Unity3D and Godot, Stride is very modular. All components of your game (game logic, rendering, assets, etc.) can be switched out to your own implementation. A Stride game is effectively a C# project so you can use any C# libraries and nugets that you love in your games, you also get all the latest .NET improvements relatively fast.
 
-For example, if you'd like to use a different entity-component system, you can patch your own in your Stride games. You could even use existing C# libraries that were probably made for other game engines in Stride. In fact, Stride games are C# projects, anything you know and use in C# can be used in any Stride games.
+Stride is also free and open-source like Godot, all the source code is accessible, anyone can contribute to it and fix issues, add new features and discuss about the direction of the development. Fortunately, Stride also offers a whole lot of features and renderers so you can make your own games and the API give you a lot of power to do complicated things.
 
 ## But wait... there's more!
 
