@@ -102,7 +102,7 @@ Well Stride is a game engine made entirely in C#. Its API very similar to Unity3
 
 Unlike Unreal, Unity3D and Godot, Stride is very modular. All components of your game (game logic, rendering, assets, etc.) can be switched out to your own implementation. A Stride game is effectively a C# project so you can use any C# libraries and nugets that you love in your games, you also get all the latest .NET improvements relatively fast.
 
-Stride is also free and open-source like Godot, all the source code is accessible, anyone can contribute to it and fix issues, add new features and discuss about the direction of the development. Fortunately, Stride also offers a whole lot of features and renderers so you can make your own games and the API give you a lot of power to do complicated things.
+Stride is also free and open-source like Godot, all the source code is accessible, anyone can contribute to it and fix issues, add new features and discuss about the direction of the development. Fortunately, Stride also offers a whole lot of features and renderers so you can make your own games and the API give you a lot of power to do even more complicated things.
 
 ## But wait... there's more!
 
