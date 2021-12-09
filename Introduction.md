@@ -1,11 +1,11 @@
 # The art of game development
 
-Hi everyone! Welcome to the first post of a series that will help you get started with game development in Stride!
+Hi everyone! Welcome to the first post of a series that will help you get started with game development in Stride.
 This series will be for those who have  little experience and knowledge in game development and are trying to decide if Stride is a good for them.
 
 I myself have been in this situation where my knowledge of graphics and programming in general was very limited and I wish to give some simple explanations to anyone who need a quick overview on how to make games, all while using the Stride game engine.
 
-In this first post we're going to define video games and try to understand how a game works on a high level. So let's first dive in by looking at how videos and games are made.
+In this first post we're going to define video games and try to understand how a game works on a high level, so let's first dive in by looking at how videos and games are made.
 
 ## Video
 
